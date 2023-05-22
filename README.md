@@ -1,27 +1,14 @@
-# CrudDadosEquipamento
+# aplicacao-de-manutencao-de-dados-de-Equipamentos
+Aplicação simples de manutenção de dados de Equipamentos de uma empresa X
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
+- Tela Cadastro
 
-## Development server
+![image](https://github.com/Raycsm/aplicacao-de-manutencao-de-dados-de-Equipamentos-/assets/90047383/ede1849e-ee19-4eeb-bf50-88250495664f)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Tela Editar
 
-## Code scaffolding
+![image](https://github.com/Raycsm/aplicacao-de-manutencao-de-dados-de-Equipamentos-/assets/90047383/1b93cc3e-ccce-4a90-9d73-7385c20e9068)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Tela tabela
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![image](https://github.com/Raycsm/aplicacao-de-manutencao-de-dados-de-Equipamentos-/assets/90047383/0e1141cb-77e5-4d63-bf30-c63d7ed7ad0f)
