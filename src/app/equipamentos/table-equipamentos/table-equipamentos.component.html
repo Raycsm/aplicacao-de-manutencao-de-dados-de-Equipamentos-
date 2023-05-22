@@ -1,0 +1,79 @@
+
+<div id="container-table">
+
+  <mat-toolbar id="toolbar">
+      <input id="input" matInput placeholder="Buscar">
+  </mat-toolbar>
+
+  <div class="table-container">
+    <mat-table [dataSource]="dataSource" matSort (matSortChange)="announceSortChange($event)">
+
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
+        <td mat-cell *matCellDef="let equipamentos"> {{equipamentos.id}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="numeroSerie">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header > Número de Série </th>
+        <td mat-cell *matCellDef="let equipamentos"> {{equipamentos.numeroSerie}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="fabricante">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Fabricante </th>
+        <td mat-cell *matCellDef="let equipamentos"> {{equipamentos.fabricante}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="tipoEquipamento">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Tipo de Equipamento </th>
+        <td mat-cell *matCellDef="let equipamentos"> {{equipamentos.tipoEquipamento}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="subestacao">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Subestação </th>
+        <td mat-cell *matCellDef="let equipamentos"> {{equipamentos.subestacao}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="dataOperacao">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Data de entrada em operação </th>
+        <td mat-cell *matCellDef="let equipamentos"> {{equipamentos.dataOperacao}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="nivelTensao">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Nível de tensão </th>
+        <td mat-cell *matCellDef="let equipamentos"> {{equipamentos.nivelTensao}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="statusEquipamento">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Status </th>
+        <td mat-cell *matCellDef="let equipamentos"> {{equipamentos.statusEquipamento}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="observacoes">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Observações </th>
+        <td mat-cell *matCellDef="let equipamentos"> {{equipamentos.observacoes}}</td>
+      </ng-container>
+
+
+      <ng-container matColumnDef="acoes">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Ações </th>
+        <td id="icon-container" mat-cell *matCellDef="let equipamentos">
+          <button mat-icon-button id="button-edit"  >
+            <mat-icon id="icons">edit</mat-icon>
+          </button>
+          <button mat-icon-button id="button-delete"  >
+            <mat-icon id="icons">delete</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+    </mat-table>
+
+    <mat-paginator [pageSizeOptions]="[5, 10, 15, 20]"
+                   showFirstLastButtons
+                   aria-label="Select page of users">
+    </mat-paginator>
+  </div>
+</div>
