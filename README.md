@@ -9,3 +9,8 @@ Aplicação desenvolvida para manutenção de dados de Equipamentos de uma empre
 
 ![image](https://github.com/Raycsm/aplicacao-de-manutencao-de-dados-de-Equipamentos-/assets/90047383/1b93cc3e-ccce-4a90-9d73-7385c20e9068)
 
+- Tela tabela
+
+![image](https://github.com/Raycsm/aplicacao-de-manutencao-de-dados-de-Equipamentos-/assets/90047383/0e1141cb-77e5-4d63-bf30-c63d7ed7ad0f)
+
+
